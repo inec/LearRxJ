@@ -11,5 +11,14 @@ object SimpleRx{
         println("~~~~~~~SimipleValue~~~~~")
 
         val someInfo= BehaviorRelay.createDefault("1")
+        println("emoji someInfo.value ${someInfo.getValue()}")
+
+        val plainString= someInfo.getValue()
+        println("emoji someInfo.value $plainString")
+
+        someInfo.accept("2")
+
+        println("emoji someInfo.value ${someInfo.getValue()}")
+
     }
 }
