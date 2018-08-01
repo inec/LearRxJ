@@ -20,5 +20,12 @@ object SimpleRx{
 
         println("emoji someInfo.value ${someInfo.getValue()}")
 
+
+        someInfo.subscribe {newValue->
+                    println("unicorn")
+        }
+
+        someInfo.accept("3")
+        //NOTE: relay
     }
 }
